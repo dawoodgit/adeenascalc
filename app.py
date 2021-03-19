@@ -16,7 +16,7 @@ def predict():
         if your_ans==number*times:
             return render_template('index.html',prediction_text= f"Good! {your_ans} is the right answer.")
         else:
-            return render_template('index.html',prediction_text="Beda Gharq!!!  The right answer was", number*times)
+            return render_template('index.html',prediction_text= f"Beda Gharq!!!  The right answer was {number*times}")
         
     
     
