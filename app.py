@@ -14,7 +14,7 @@ def predict():
         times = int(request.form['times'])
         your_ans = int(request.form['your_ans'])
         if your_ans==number*times:
-            return render_template('index.html',prediction_text= f"Good! {number*times} is the right answer.")
+            return render_template('index.html',prediction_text= f"Absolutely Right! It is {number*times}")
         else:
             return render_template('index.html',prediction_text= f"Beda Gharq!!!  The right answer was {number*times}")
         
