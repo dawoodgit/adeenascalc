@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div style="color:black;">
+        <form action="{{ url_for('predict')}}" method="post">
+            <h2>Adeena's Calculator</h2>
+            <h3>Number</h3>
+            <input id="first" name="number" type="number ">
+            <h3>Times</h3>
+            <input id="second" name="times" required="required">
+            <h3>What should be the Answer?</h3><input id="third" name="your_ans" required="required">
+            </select>
+            <br><br><button id="sub" type="submit ">Check your Answer</button>
+
+        </form>
+
+
+
+        <h3>{{ prediction_text }}<h3>
+    </div>
+
+    <style>
+        body {
+            background-color: rgb(126, 199, 97);
+            text-align: center;
+            padding: 0px;
+        }
+
+
+        #sub {
+            width: 120px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+
+        #sub:hover {
+            background-color: gold;
+        }
+
+        #first {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #second {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #third {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
