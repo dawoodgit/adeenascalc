@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>This is the Home Page</h1>
+    <div style="color: black;">
+        <form action="{{ url_for('addition')}}" method="get">
+            <button type="submit">Add</button>
+        </form>
+        
+        <br><br>
+        <form action="{{ url_for('subtraction')}}" method="get">
+            <button type="submit">Subtract</button>
+        </form>
+        
+        <br><br>
+        <form action="{{ url_for('multiplication')}}" method="get">
+            <button type="submit">Multiply</button>
+        </form> 
+
+        <br><br>
+        <form action="{{ url_for('division')}}" method="get">
+            <button type="submit">Divide</button>
+        </form> 
+        
+    </div>
+
+    <style>
+        body {
+            background-color: rgb(126, 199, 97);
+            text-align: center;
+            padding: 0px;
+        }
+
+
+        #sub {
+            width: 120px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+
+        #sub:hover {
+            background-color: gold;
+        }
+    </style>
+</body>
+</html>

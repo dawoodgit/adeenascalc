@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subtract Page</title>
+</head>
+<body>
+    <h1>This is subtraction page</h1>
+    <div>
+        <form action="{{ url_for('home')}}" method="get">
+            <button type="submit">Back to Home</button>
+        </form>
+
+        <form action="{{ url_for('subtpredict')}}" method="post">
+            <h2>Adeena's Calculator</h2>
+            <h3>Number</h3>
+            <input id="first" name="number" type="number" required="required">
+            <h3>Minus</h3>
+            <input id="second" name="times" required="required">
+            <h3>What should be the Answer?</h3><input id="third" name="your_ans" required="required">
+            </select>
+            <br><br><button id="sub" type="submit ">Check your Answer</button>
+
+        </form>
+
+        <h3>{{ subtprediction_text }}<h3></h3>
+    </div>
+
+    <style>
+        body {
+            background-color: pink;
+            text-align: center;
+            padding: 0px;
+        }
+
+
+        #sub {
+            width: 120px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+
+        #sub:hover {
+            background-color: gold;
+        }
+
+        #first {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #second {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #third {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</body>
+</html>
